@@ -37,6 +37,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  ## Website die ik ga namaken  
+  [Nike website](https://www.nike.com/nl/)  
+
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
