@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rosalie Kroon
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface lane (voor nu)
  
 </details>
 
@@ -36,15 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  ## Website die ik ga namaken
+  [Wesbite van Nike](https://www.nike.com/nl/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Voor pagina van Nike 
+  <img src="readme-images/websitevoorpaginanike.png" width="375px" alt="Dit is de voorpagina van de Nike website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Sporwear, dames categorie 
+  <img src="readme-images/sportweardamespagina.png" width="375px" alt="Dit is de pagina van 'Sportwear' dames categorie">
  
 </details>
 
