@@ -56,7 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  ### Bevindingen
+  ### Bevindingen (toegangelijkheid test: brillen)
   Carrousel is lastig met beperkt zicht. Doordat je niet de pijl navigatie in het midden hebt, maar in de rechter hoek is het met bijvoorbeeld de bril lastig te zien dat je deze carrousel kan bewegen.
 
 <img src="readme-images/Carrouselnike.png" width="300px" alt="Carrousel">
@@ -68,6 +68,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Dit zijn de brillen die ik heb gebruikt tijdens de toegangelijkheids test.
   <img src="readme-images/Toegangelijkheid.png" width="300px" alt="Brillen met beperking">
 
+
+ ### Bevindingen (toegangelijkheid test: Screenreader)
+
+  Verschillende knoppen geven niet duidelijk aan wat ze doen, bijvoorbeeld de carrousel navigatie zegt alleen "knop" en niet wat het doet.
+<img src="readme-images/kleurennike.png.png" width="300px" alt="Kleuren keuze">
+
+alt tekst is niet volledig
 
 
 </details>
