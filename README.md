@@ -57,7 +57,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Kleuren contrast is lastiger.
+  Carrousel is lastig met beperkt zicht. 
+
+<img src="readme-images/Carrouselnike.png" width="300px" alt="Carrousel">
+  <img src="readme-images/footernike.png" width="300px" alt="Footer kleuren contrast.">
+  <img src="readme-images/Toegangelijkheid.png" width="300px" alt="Brillen met beperking">
+
+
 
 </details>
 
