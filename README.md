@@ -57,15 +57,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Carrousel is lastig met beperkt zicht. 
+  Carrousel is lastig met beperkt zicht. Doordat je niet de pijl navigatie in het midden hebt, maar in de rechter hoek is het met bijvoorbeeld de bril lastig te zien dat je deze carrousel kan bewegen.
 
 <img src="readme-images/Carrouselnike.png" width="300px" alt="Carrousel">
 
-  Kleuren contrast is lastiger.
+ Er is een witte achtergrond met grijze tekst, dit maakt het lastiger met een beperking. De kleuren contrast kan hiervoor beter. 
 
   <img src="readme-images/footernike.png" width="300px" alt="Footer kleuren contrast.">
 
-  Dit zijn de brillen die ik heb geebruikt tijdens de toegangelijkheids test.
+  Dit zijn de brillen die ik heb gebruikt tijdens de toegangelijkheids test.
   <img src="readme-images/Toegangelijkheid.png" width="300px" alt="Brillen met beperking">
 
 
