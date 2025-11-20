@@ -3,7 +3,7 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Rosalie">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Website Rosalie</title>
@@ -20,7 +20,6 @@
 	<nav>
 			
 		<ul class="nav-links">
-			<h1>Nike</h1>
 		<li><a href="#"> Nieuw</a></li>
 			<li><a href="#"> Heren</a></li>
 			<li><a href="#"> Dames</a></li>
@@ -36,34 +35,50 @@
 	<video muted autoplay loop> 
 		<source src="videos/videohoofdpagina.mp4" type="video/mp4">
 	</video>
-	<h2>Just Do It</h2>
-	<p>Ontdek de nieuwe collectie</p>
+	<h2>Ontdek de nieuwe collectie</h2>
 	<a href="#" class="button">Shop nu</a>
 </section>
 
-<!-- bronnen voor hero sectie: 
+<!-- bronnen voor 'hero' sectie: 
  bron 1: video autoplay: https://www.youtube.com/watch?v=ng6_nnOFXbg
--->
+ bron 2: gebruik van flexbox: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox
+ bron 3: gebruik van object-fit voor tekst over video: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit
+ bron 4: absolute en relative gebruik: https://stackoverflow.com/questions/42845674/problems-with-positionabsolute-and-video
+ -->
 
 <!--Prodcuten-->
 <section class="products">
-	<h2>Populaire Producten</h2>
-	<article class="product-inhoud">
-		<img src="placeholder" alt="Nike Air Max">
-		<h3>Nike Air Max</h3>
-		<p>120,-</p>
-	</article>
-	<article class="product-inhoud">
-		<img src="placeholder" alt="Nike React">
-		<h3>Nike React</h3>
-		<p>130,-</p>
-	</article>
-	<article class="product-inhoud">
-		<img src="placeholder" alt="Nike Zoom">
-		<h3>Nike Zoom</h3>
-		<p>110,-</p>
-	</article>
+    <h2>Producten</h2>
+
+    <ul class="product-grid">
+		<li class="product">
+			<article>
+             <img src="images/fotoheren.jpg" alt="">
+             <a href="#" class="product-btn">Shop heren</a>
+            </article>
+		</li>
+
+		<li class="product">
+			<article>
+            <img src="images/fotodames.avif" alt="">
+            <a href="#" class="product-btn">Shop dames</a>
+       	    </article>
+		</li>
+
+		<li class="product">
+			<article>
+            <img src="images/fotokids.avif" alt="">
+            <a href="#" class="product-btn">Shop kids</a>
+            </article>
+		</li>
+    </ul>
 </section>
+
+<!-- bronnen voor 'producten' sectie: 
+ bron 1: foto heren: https://www.bike24.nl/producten/874606
+ bron 2: foto dames: https://www.nike.com/nl/nike-style-by
+ bron 3: foto kids: https://www.nike.com/nl/w/meisjes-kleding-3aqegz6ymx6
+ -->
 
 <footer>
 	<P> &copy; 2025</P>
