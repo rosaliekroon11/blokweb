@@ -250,6 +250,6 @@ alt tekst is niet volledig
 
   1. bron 1
   2. bron 2
-  3. ...
+  3. autoplay video toevoegen aan de voorpagina: https://www.youtube.com/watch?v=ng6_nnOFXbg 
 
 </details>
