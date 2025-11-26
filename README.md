@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/websitevoorpaginanike.png" width="375px" alt="Dit is de voorpagina van de Nike website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Sporwear, dames categorie 
+  Sportwear, dames categorie 
   <img src="readme-images/sportweardamespagina.png" width="375px" alt="Dit is de pagina van 'Sportwear' dames categorie">
  
 </details>
@@ -142,6 +142,10 @@ alt tekst is niet volledig
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+ media queries:
+  Nike gebruikt media queries, dit wil zeggen dat het denkt aan responsive
+
+  Vandaag ga ik de opdracht doen van flexbox, oefening 4 carousel.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -174,6 +178,7 @@ alt tekst is niet volledig
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
 
 </details>
 
@@ -248,8 +253,12 @@ alt tekst is niet volledig
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. autoplay video toevoegen aan de voorpagina: https://www.youtube.com/watch?v=ng6_nnOFXbg 
+ 
+  1. bron: autoplay video toevoegen aan de voorpagina: https://www.youtube.com/watch?v=ng6_nnOFXbg 
+  2. bron: gebruik van flexbox: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox
+  3. bron: gebruik van object-fit voor tekst over video: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit
+  4. bron: absolute en relative gebruik: https://stackoverflow.com/questions/42845674/problems-with-positionabsolute-and-video
+  5. bron: bron voor grid-template-columns: https://www.youtube.com/watch?v=br-0i3U1VCA 
+ -->
 
 </details>
