@@ -109,6 +109,16 @@ alt tekst is niet volledig
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  geen classes gebruiken maar gebruik maken 
+  logo op main pagina h1 maken
+  header maken van logo :
+  h1 om de image alt text
+
+
+ eerst html van beide pagina's
+
+ media queries voor het responsive maken van header
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
