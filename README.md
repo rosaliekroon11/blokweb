@@ -108,16 +108,7 @@ alt tekst is niet volledig
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-  geen classes gebruiken maar gebruik maken 
-  logo op main pagina h1 maken
-  header maken van logo :
-  h1 om de image alt text
-
-
- eerst html van beide pagina's
-
- media queries voor het responsive maken van header
+ //
 
 
   ### Agenda voor meeting
@@ -133,10 +124,7 @@ alt tekst is niet volledig
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  // geen voortgangsmeeting
 
 </details>
 
@@ -152,10 +140,10 @@ alt tekst is niet volledig
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
- media queries:
-  Nike gebruikt media queries, dit wil zeggen dat het denkt aan responsive
+  Over het algemeen is de voorpagina niet ingewkikkeld. Er zitten bepaalde soorten elementen in zoals een carousel, dit waren dan de uitdagingen die ik had voor de voorpagina. 
 
-  Vandaag ga ik de opdracht doen van flexbox, oefening 4 carousel.
+  Ook ben ik begonnen met het werken met flexbox en grids. Dit ben ik ook gaan toepassen in mijn code voor de website. 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -170,10 +158,14 @@ alt tekst is niet volledig
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Het ging vooral over de breakdown schetsen en de stappen in het opzetten van je website, bijvoorbeeld, start eerst met al je html en daarna pas de css. 
+
+  Ik was zelf al begonnen met de css omdat ik eigenlijk wilde kijken hoe het eruit kwam te zien, ook omdat ik sommige opdrachten had gemaakt (carousel, grid) wilde ik dit ook gelijk toepassen in mijn website.
+
+  Ook zat ik nog na te denken over waar ik mijn focus wil leggen. In de voorbereiding koos ik voor surface lane, maar ik heb mijn toch gekeerd naar responsive. 
+  Voor mijn website vind ik dat toch de beste optie.
+
+  Ik kan daarvoor gebruik maken van grids en meddia quaries.
 
 </details>
 
