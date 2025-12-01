@@ -92,7 +92,7 @@ section:nth-of-type(1) h2 {
     bottom: 20%;
     left: 20%;
     font-weight: 600;
-    bottom: 30%;
+    bottom: 40%;
     z-index: 2;
 }
 
@@ -111,7 +111,7 @@ section:nth-of-type(1) a:hover {
     background-color: #cac9c9;
 }
 
-/* Product sectie */
+/* categorie sectie */
 section:nth-of-type(2) {
     max-width: 1200px;
     margin: 4rem auto;
@@ -171,7 +171,7 @@ section:nth-of-type(2) li article a:hover {
     background-color: #cac9c9;
 }
 
-/*Product highlight sectie*/
+/* highlight sectie*/
 section:nth-of-type(3) {
     margin-top: 5rem;
     position: relative;
@@ -243,7 +243,7 @@ section:nth-of-type(4) {
 section:nth-of-type(4) h2 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    text-align: left;
+    text-align: center;
     font-weight: 475;
 }
 
@@ -252,13 +252,10 @@ section:nth-of-type(4) ul{
   overflow:auto;
   scroll-snap-type:x mandatory;
   scroll-behavior:smooth;
-  /* zodat je niet per ongeluk 'back' scrollt */
   overscroll-behavior-x:contain;
   gap: 1rem;
   
-
   
-  /* dunne scrollbar met een kleur */
   scrollbar-width:thin;
   scrollbar-color:rgb(85, 85, 85) transparent;
 
@@ -270,14 +267,13 @@ section:nth-of-type(4) ul li {
   flex-shrink:0;
   scroll-snap-align:center;
   list-style: none;
- 
-
 }
 
 section:nth-of-type(4) li img {
     width: 380px;
     height: 320px;
     display: block;
+    
 }
 
 section:nth-of-type(4) li a {
@@ -293,9 +289,22 @@ section:nth-of-type(4) li a {
 
 }
 
-section:nth-of-type(4) li a:hover{
+section:nth-of-type(4) li a:hover {
     background-color: #cac9c9;
 }
+
+section:nth-of-type(4) button {
+    position: relative;
+    background-color: #d4d4d4;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+/*knoppen voor carousel*/
 
 /* bron grid-column: https://www.w3schools.com/cssref/func_repeat.php */
 

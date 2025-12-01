@@ -171,8 +171,6 @@ alt tekst is niet volledig
 
 
 
-
-
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
@@ -180,7 +178,6 @@ alt tekst is niet volledig
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
 
 </details>
 
@@ -195,6 +192,10 @@ alt tekst is niet volledig
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  roduct favorieten, oefening (eerste hartje)
+
+  <img src="/readme-images/jshartje.png">
 
 
   ### Agenda voor meeting
@@ -262,5 +263,5 @@ alt tekst is niet volledig
   4. bron: absolute en relative gebruik: https://stackoverflow.com/questions/42845674/problems-with-positionabsolute-and-video
   5. bron: bron voor grid-template-columns: https://www.youtube.com/watch?v=br-0i3U1VCA 
  -->
-
+ 
 </details>
