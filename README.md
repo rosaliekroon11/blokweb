@@ -138,9 +138,8 @@ alt tekst is niet volledig
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  Over het algemeen is de voorpagina niet ingewkikkeld. Er zitten bepaalde soorten elementen in zoals een carousel, dit waren dan de uitdagingen die ik had voor de voorpagina. 
+  Over het algemeen is de voorpagina niet ingewkikkeld. Er zitten bepaalde soorten elementen in zoals een carousel. Dit is dan een uitdaging die ik had voor de voorpagina. 
 
   Ook ben ik begonnen met het werken met flexbox en grids. Dit ben ik ook gaan toepassen in mijn code voor de website. 
 
@@ -165,7 +164,7 @@ alt tekst is niet volledig
   Ook zat ik nog na te denken over waar ik mijn focus wil leggen. In de voorbereiding koos ik voor surface lane, maar ik heb mijn toch gekeerd naar responsive. 
   Voor mijn website vind ik dat toch de beste optie.
 
-  Ik kan daarvoor gebruik maken van grids en meddia quaries.
+  Ik kan daarvoor gebruik maken van grids en media quaries.
 
 </details>
 
@@ -179,6 +178,8 @@ alt tekst is niet volledig
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  NOG DOEN
+
 </details>
 
 
@@ -191,11 +192,28 @@ alt tekst is niet volledig
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  roduct favorieten, oefening (eerste hartje)
+   Hamburger menu button opdracht en/of hartje
 
   <img src="/readme-images/jshartje.png">
+
+  Allebei de elementen heb ik (soort van) in mijn website, alleen heet het hamburger menu niet echt een soort transitie, er komt een side paneel aan de rechterkant.
+
+  Het favorieten van een product gebeurt als je op het product klikt en onderin kan je het dan mankeren als 'favorieten', het hartje wordt dan zwart en je krijgt een pop up dat het item is toegevoegd aan je favorieten. 
+
+  onthouden: child selectors '>'
+
+  ipv top,right, left, botton, right gebruik translates
+
+  gebruik maken van :has()
+
+
+  States opdrachten: 
+  - links, buttons  
+  - :has()
+
+
+
 
 
   ### Agenda voor meeting
@@ -262,6 +280,7 @@ alt tekst is niet volledig
   3. bron: gebruik van object-fit voor tekst over video: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit
   4. bron: absolute en relative gebruik: https://stackoverflow.com/questions/42845674/problems-with-positionabsolute-and-video
   5. bron: bron voor grid-template-columns: https://www.youtube.com/watch?v=br-0i3U1VCA 
+  6. bron: van tekst menu naar hamburger menu: https://codepen.io/zagaris/pen/qBmqQEN 
  -->
  
 </details>

@@ -15,18 +15,65 @@ body {
 }
 
 :root {
-	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
 }
 
-/* Header / Navbar */
 header {
+    position: sticky;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
+    top: 0; /*voor postion sticky*/
     z-index: 1000;
+}
+
+/*hamburger menu responsive
+bron: /*bron: https://codepen.io/zagaris/pen/qBmqQEN */
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    color:#000;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 32px;
+    float: right;
+    line-height: 70px;
+    display: none;
+}
+
+.hamburger i {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #111;
+    position: relative;
+}
+
+.hamburger i::before,
+.hamburger i::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #111;
+    left: 0;
+}
+
+.hamburger i::before {
+    top: -8px;
+}
+
+.hamburger i::after {
+    top: 8px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger:hover {
+    background-color: #4b4b4b;
 }
 
 nav {
@@ -36,14 +83,15 @@ nav {
     align-items: center;
     background-color: #fff;
     list-style: none;
+    flex-wrap: wrap;
 
 }
 
 nav a img {
-    position: absolute;
     left: 2rem;
-    bottom: 0.2rem;
     width: 60px; 
+    margin-top: 1rem;
+    margin-left: 1.5rem;;
 }
 
 nav ul {
@@ -54,300 +102,74 @@ nav ul {
     gap: 2rem;
 }
 
-
 nav ul li a {
     text-decoration: none;
     color: #111;
+
     font-size: 16px;
     font-weight: 500;
 }
 
 
 nav ul li a:hover {
-    color: #555;
+    text-decoration: underline;
 }
 
-/* Hero sectie */
-section:nth-of-type(1) {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    height: 50vh;
-    overflow: hidden;
+/*media quaries voor hamburger menu*/
+/*bron: https://codepen.io/zagaris/pen/qBmqQEN*/
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        padding: 1rem 2rem;
+    }
+
+    nav ul.show {
     display: flex;
-    align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        margin-right: 1rem;
+        margin-top: 0rem;
+    }
 }
 
-/* les 24 novmeber justify en align */
-section:nth-of-type(1) video {
-    width: 100%;
-    height: auto;
-    display: block;
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    nav {
+        background-color: #fff;
+    }
 }
-
-section:nth-of-type(1) h2 {
-    position: absolute;
-    font-size: 2rem;
-    color: #fff;
-    bottom: 20%;
-    left: 20%;
-    font-weight: 600;
-    bottom: 40%;
-    z-index: 2;
-}
-
-section:nth-of-type(1) a {
-    position: absolute;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-weight: 500;
-    bottom: 12%;
-}
-
-section:nth-of-type(1) a:hover {
-    background-color: #cac9c9;
-}
-
-/* categorie sectie */
-section:nth-of-type(2) {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    text-align: center;
-    
-}
-
-section:nth-of-type(2) h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* GRID */
-section:nth-of-type(2) ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
-    gap: 1rem;
-    list-style: none;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* bron voor grid-template-columns: https://www.youtube.com/watch?v=br-0i3U1VCA 
-waarom? omdat als het scherm verkleind (op mobiel) worden de images onder elkaar gezet
-en is het oogt het beter */
-
-
-section:nth-of-type(2) li article {
-    position: relative;
-    padding: 0;
-    border-radius: 1px;
-    overflow: hidden;
-    
-}
-
-section:nth-of-type(2) li article img {
-    width: 100%;
-    display: block;
-}
-
-section:nth-of-type(2) li article a {
-    position: absolute;
-    bottom: 45px;
-    left: 1rem;
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-section:nth-of-type(2) li article a:hover {
-    background-color: #cac9c9;
-}
-
-/* highlight sectie*/
-section:nth-of-type(3) {
-    margin-top: 5rem;
-    position: relative;
-    padding: 0;
-    border-radius: 3px;
-    overflow: hidden;
-
-}
-
-section:nth-of-type(3) h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-   
-}
-
-section:nth-of-type(3) ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-
-section:nth-of-type(3) li {
-    position: relative;
-    border-radius: 1px;
-    overflow: hidden;
-}
-
-section:nth-of-type(3) li img {
-    width: 100%;
-    display: block;
-}
-
-section:nth-of-type(3) li h3 {
-    position: absolute;
-    bottom: 100px;
-    left: 30px;
-    z-index: 3;
-    font-size: 25px;
-    font-weight: 350;
-    color: #f9f9f9;
-}
-
-section:nth-of-type(3) li a {
-    position: absolute;
-    left: 30px;
-    bottom: 45px;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-/* carrousel sectie*/
-
-section:nth-of-type(4) {
-    margin-top: 5rem;
-    position: relative;
-    padding: 0 2rem;
-    border-radius: 3px;
-
-}
-
-section:nth-of-type(4) h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 475;
-}
-
-section:nth-of-type(4) ul{
-  display:flex;
-  overflow:auto;
-  scroll-snap-type:x mandatory;
-  scroll-behavior:smooth;
-  overscroll-behavior-x:contain;
-  gap: 1rem;
-  
-  
-  scrollbar-width:thin;
-  scrollbar-color:rgb(85, 85, 85) transparent;
-
-
-}
-
-section:nth-of-type(4) ul li {
-  flex-basis:0 0 200px;
-  flex-shrink:0;
-  scroll-snap-align:center;
-  list-style: none;
-}
-
-section:nth-of-type(4) li img {
-    width: 380px;
-    height: 320px;
-    display: block;
-    
-}
-
-section:nth-of-type(4) li a {
-    position: relative;
-    left: 30px;
-    bottom: 60px;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-
-}
-
-section:nth-of-type(4) li a:hover {
-    background-color: #cac9c9;
-}
-
-section:nth-of-type(4) button {
-    position: relative;
-    background-color: #d4d4d4;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-
-
-/*knoppen voor carousel*/
-
-/* bron grid-column: https://www.w3schools.com/cssref/func_repeat.php */
-
-/* secondary nav sectie*/
-/* GRID use? */
-section:nth-of-type(5) {
-    max-width: 1200px;
-    margin: 4rem auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 3rem;
-    padding: 0 2rem;
-    
-}
-
-section:nth-of-type(5) section h2 {
-    font-size: 22px;
-    margin-bottom: 0.7rem;
-    color: #000;
-}
-
-section:nth-of-type(5) section ul {
-    list-style: none;
-    padding: 0;
-}
-
-section:nth-of-type(5) li {
-    margin-bottom: 0.5rem;
-    font-size: 15px;
-    color:#555;
-}
-
 
 /*pre-footer*/
 /* bron voor summary use: https://www.w3schools.com/tags/tag_summary.asp*/
 
 section:nth-of-type(6) {
+    grid-column: 1 / -1;
     padding: 1rem 1.2rem;
 }
 
 section:nth-of-type(6) details {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    cursor: pointer;
 }
 
 section:nth-of-type(6) summary {
@@ -358,6 +180,7 @@ section:nth-of-type(6) summary {
     font-size: 18px;
     font-weight: 500;
     color:#171717;
+    
   
 }
 
@@ -380,15 +203,28 @@ section:nth-of-type(6) li {
     margin-bottom: 10px;
 }
 
-
 /* footer */
 footer {
-    text-align: center;
+    text-align: left;
     padding: 2rem;
-    background-color: #111;
-    color: #fff;
+    background-color: #e9e8e8;
+    color: #484848;
     margin-top: 4rem;
 }
+
+footer p {
+	color: #000;
+}
+
+footer ul {
+	list-style: none;
+}
+
+
+
+
+
+
 
 
 
