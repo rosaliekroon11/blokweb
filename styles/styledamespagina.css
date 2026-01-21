@@ -131,6 +131,36 @@ main > section:nth-of-type(3) li {
 	display: flex;
 	flex-direction: column;
 	gap: 0.4rem;
+
+  position: relative;
+}
+
+main > section:nth-of-type(3) li button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  
+  appearance:none;
+  background-color:transparent;
+  border:none;
+
+  border-radius:.5rem;
+
+  cursor:pointer;
+
+  font-size: 30px;
+  color: white;
+
+  transition: color 0.2 ease, transform 0.2s ease;
+}
+
+main > section:nth-of-type(3) li button:hover {
+	transform: scale(1.5);
+}
+
+main > section:nth-of-type(3) li button[aria-pressed="true"] {
+  color: red;
+  
 }
 
 main > section:nth-of-type(3) img {
@@ -177,7 +207,15 @@ main > section:nth-of-type(4) li {
   background: #d6d6d6;
   padding: 1rem 1rem;
   border-radius: 50px;
+
+  cursor: pointer;
 }
+
+main > section:nth-of-type(4) li:hover {
+  transform: scale(0.9);
+}
+
+
 
 /* GERELATEERDE VERHALEN*/
 main > section:nth-of-type(5) {
@@ -206,7 +244,7 @@ main > section:nth-of-type(5) ul {
   overscroll-behavior-x:contain;
 
   scrollbar-width:thin;
-  scrollbar-color:rgb(85, 85, 85) transparent;
+  scrollbar-color:rgb(199, 199, 199) transparent;
   
 }
 
@@ -237,6 +275,8 @@ main > section:nth-of-type(5) li img {
 main > section:nth-of-type(5) ul li a:hover{
   background-color: transparent;
 }
+
+/*button voor carousel*/
 
 section:nth-of-type(5) button {
     position: absolute;
@@ -324,4 +364,47 @@ main.filters-hidden {
    main:not(.filters-hidden) > section:nth-of-type(2) {
     display: block;
   }
+}
+
+/*pre-footer*/
+/* bron voor summary use: https://www.w3schools.com/tags/tag_summary.asp*/
+
+section:nth-of-type(6) {
+    grid-column: 1 / -1;
+    padding: 1rem 1.2rem;
+}
+
+section:nth-of-type(6) details {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+section:nth-of-type(6) summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color:#171717; 
+}
+
+section:nth-of-type(6) summary::after {
+    content: "↓";
+    font-size: 1.2rem;
+}
+
+section:nth-of-type(6) ul {
+    list-style: none;
+    padding: 1rem 0 0;
+    margin: 0;
+}
+
+section:nth-of-type(6) li {
+    padding: 0.5rem 0;
+    color: #5e5d5d;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }

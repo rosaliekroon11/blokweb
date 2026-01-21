@@ -27,6 +27,95 @@ header {
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #fff;
+    list-style: none;
+    padding: 0 1rem;
+}
+
+nav h1 img {
+    left: 2rem;
+    width: 60px; 
+    margin-top: 1rem;
+    margin-left: 1.5rem;;
+}
+
+nav ul {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav button {
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+nav button:last-of-type {
+  position: relative;
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+nav button:last-of-type span {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+
+  background: red;
+  color: white;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav button img {
+  width: 24px;
+  height: 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /*hamburger menu responsive
 bron: /*bron: https://codepen.io/zagaris/pen/qBmqQEN */
 
@@ -36,7 +125,6 @@ bron: /*bron: https://codepen.io/zagaris/pen/qBmqQEN */
     color:#000;
     cursor: pointer;
     font-size: 30px;
-    margin-left: 32px;
     float: right;
     line-height: 70px;
     display: none;
@@ -48,6 +136,7 @@ bron: /*bron: https://codepen.io/zagaris/pen/qBmqQEN */
     height: 3px;
     background: #111;
     position: relative;
+    
 }
 
 .hamburger i::before,
@@ -76,49 +165,13 @@ bron: /*bron: https://codepen.io/zagaris/pen/qBmqQEN */
     background-color: #4b4b4b;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    background-color: #fff;
-    list-style: none;
-    flex-wrap: wrap;
 
-}
-
-nav a img {
-    left: 2rem;
-    width: 60px; 
-    margin-top: 1rem;
-    margin-left: 1.5rem;;
-}
-
-nav ul {
-    display: flex;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    list-style: none;
-    gap: 2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #111;
-
-    font-size: 16px;
-    font-weight: 500;
-}
-
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 /*media quaries voor hamburger menu*/
 /*bron: https://codepen.io/zagaris/pen/qBmqQEN*/
 
 @media (max-width: 800px) {
+    
     nav ul {
         display: none;
         flex-direction: column;
@@ -133,9 +186,15 @@ nav ul li a:hover {
 
     .hamburger {
         display: block;
+        order: 3;
         margin-left: auto;
-        margin-right: 1rem;
         margin-top: 0rem;
+    }
+
+    nav > button:not(.hamburger) {
+        order: 2;
+        margin-left: auto; 
+        margin-right: 0.5rem; 
     }
 }
 
@@ -152,57 +211,19 @@ nav ul li a:hover {
 
     .hamburger {
         display: block;
+        order: 3;
     }
+
+    nav > button:not(.hamburger) {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0.5rem;
+    }
+
     nav {
         background-color: #fff;
     }
 }
-
-/*pre-footer*/
-/* bron voor summary use: https://www.w3schools.com/tags/tag_summary.asp*/
-
-section:nth-of-type(6) {
-    grid-column: 1 / -1;
-    padding: 1rem 1.2rem;
-}
-
-section:nth-of-type(6) details {
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
-    cursor: pointer;
-}
-
-section:nth-of-type(6) summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    color:#171717;
-    
-  
-}
-
-section:nth-of-type(6) summary::after {
-    content: "↓";
-    font-size: 1.2rem;
-}
-
-section:nth-of-type(6) ul {
-    list-style: none;
-    padding: 1rem 0 0;
-    margin: 0;
-}
-
-section:nth-of-type(6) li {
-    padding: 0.5rem 0;
-    color: #5e5d5d;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
 /* footer */
 footer {
     text-align: left;

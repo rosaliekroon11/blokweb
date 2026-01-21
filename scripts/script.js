@@ -1,5 +1,4 @@
 // JavaScript Document
-console.log("hi");
 
 // hamburger menu 
 // bron: https://codepen.io/zagaris/pen/qBmqQEN
@@ -21,7 +20,7 @@ initCarousel('main section:nth-of-type(5)');
 
 function initCarousel(sectionSelector) {
   const section = document.querySelector(sectionSelector);
-  if (!section) return;
+  
 
   const carousel = section.querySelector('ul');
   const buttons = section.querySelectorAll('button');
@@ -61,3 +60,38 @@ toggleFiltersButton.addEventListener('click', () => {
     ? 'Toon filters'
     : 'Verberg filters';
 });
+
+// wishlist hartje
+// bron: https://codepen.io/shooft/pen/QwjxmeL (animaties-oefening 3)
+
+  function toggleWishlist(event) {
+    let clickedHeart = event.target;
+
+
+    let isLiked = clickedHeart.getAttribute("aria-pressed") === "true";
+
+    clickedHeart.setAttribute("aria-pressed", !isLiked);
+
+    updateWinkelmandCount();
+  }
+
+  document
+    .querySelectorAll('main > section:nth-of-type(3) li button')
+    .forEach(button => {
+      button.addEventListener("click", toggleWishlist);
+    });
+
+  function updateWinkelmandCount() {
+    let likedItems = document.querySelectorAll(
+      'main > section:nth-of-type(3) li button[aria-pressed="true"]'
+    ).length;
+
+    let winkelmandCounter = document.querySelector(
+      'nav button[aria-label="Winkelmand"] span'
+    );
+
+    winkelmandCounter.textContent = likedItems;
+
+  }
+  
+
