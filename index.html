@@ -22,11 +22,14 @@
 		-->
 		<nav>	
 			<h1> 
-				<a href="index.html"><img src="images/nikelogo.png" alt="Nikelogo"></a>
+				<a href="/index.html"><img src="images/nikelogo.png" alt="Nikelogo"></a>
 			</h1>
 			<button class="hamburger" id="hamburger"><i></i></button>
 	
 			<ul>
+				<li class="menu-close">
+					<button aria-label="Menu sluiten">&times;</button>
+				</li>
 				<li><a href="..">Nieuw</a></li>
 				<li><a href="..">Heren</a></li>
 				<li><a href="damespagina.html">Dames</a></li>
@@ -47,10 +50,10 @@
 	<main>
 	<!-- Hero-->
 		<section>
+			<h2>Ontdek de nieuwe collectie</h2>
 			<video muted autoplay loop> 
 				<source src="videos/videohoofdpagina.mp4" type="video/mp4">
 			</video>
-			<h2>Ontdek de nieuwe collectie</h2>
 			<a href=".." class="button">Shop</a>
 		</section>
 
@@ -66,24 +69,18 @@
 			<h2>Categorieën</h2>
 			<ul>
 				<li>
-					<article>
 					<img src="images/fotoheren.jpg" alt="Foto van man">
 					<a href="..">Shop heren</a>
-					</article>
 				</li>
 
 				<li>
-					<article>
 					<img src="images/fotodames.jpg" alt="Foto van vrouw">
 					<a href="..">Shop dames</a>
-					</article>
 				</li>
 
 				<li>
-					<article>
 					<img src="images/fotokids.jpg" alt="Foto van een kind">
 					<a href="..">Shop kids</a>
-					</article>
 				</li>
 			</ul>
 
@@ -93,9 +90,8 @@
 
 		<section>
 			<h2>Highlights</h2>
-
 			<ul>
-				<li>
+				<li >
 					<img src="images/nieuweschoenen.jpeg" alt="Nike schoen">
 					<h3>Nieuwe schoenen</h3>
 					<a href="..">Shop</a>
@@ -180,63 +176,7 @@
 		</section>
 
 
-		<section>
-			<details>
-				<summary>Bronnen</summary>
-				<ul>
-					<li>Cadeaubonnen</li>
-					<li>Zakelijke cadeaubonnen</li>
-					<li>Zoek een store</li>
-					<li>Nike Journal</li>
-					<li>Word member</li>
-					<li>Feedback</li>
-					<li>Promotiecodes</li>
-					<li>Productadvies</li>
-					<li>Running Shoe Finder</li>
-				</ul>
-			</details>
-
-			<details>
-				<summary>Help</summary>
-				<ul>
-					<li>Help</li>
-					<li>Bestelstatus</li>
-					<li>Verzending en levering</li>
-					<li>Retourzendingen</li>
-					<li>Betaalmethodes</li>
-					<li>Contact</li>
-					<li>Reviews</li>
-					<li>Hulp bij Nike promotiecodes</li>
-				</ul>
-			</details>
-
-			<details>
-				<summary>Bedrijf</summary>
-				<ul>
-					<li>Over Nike</li>
-					<li>Nieuws</li>
-					<li>Werken bij Nike</li>
-					<li>Investeerders</li>
-					<li>Duurzaamheid</li>
-					<li>Toengankelijkheid</li>
-					<li>Missie</li>
-					<li>Nike Coaching</li>
-					<li>Een Kwestie Melden</li>
-				</ul>
-			</details>
-
-			<details>
-				<summary>Communitykortingen</summary>
-				<ul>
-					<li>Student</li>
-					<li>Docent</li>
-					<li>Eerstehulpverleners</li>
-					<li>Zorgprofessionals</li>
-				</ul>
-			</details>
-			
-		</section>
-
+		
 	</main>
 
 	<!-- bronnen voor 'producten' sectie: 
@@ -251,16 +191,76 @@
 
 	<!--Footer-->
 
+
 	<footer>
-		<p>&copy Nike, Inc. Alle rechten voorbehouden</p>
-		<ul>
-			<li> Handleidingen</li>
-			<li>Gebruiksvoorwaarden</li>
-			<li>Verkoopvoorwaarden</li>
-			<li>Bedrijfsgegevens</li>
-			<li>Privacy- en cookiebeleid</li>
-			<li>Privacy- en cookie-instellingen</li>
-		</ul>
+		<section>
+			<h2>Pre-footer</h2>
+
+			<section>
+				<h3 tabindex="0">Bronnen</h3>
+				<ul>
+					<li>Cadeaubonnen</li>
+					<li>Zakelijke cadeaubonnen</li>
+					<li>Zoek een store</li>
+					<li>Nike Journal</li>
+					<li>Word member</li>
+					<li>Feedback</li>
+					<li>Promotiecodes</li>
+					<li>Productadvies</li>
+					<li>Running Shoe Finder</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 tabindex="0">Help</h3>
+				<ul>
+					<li>Help</li>
+					<li>Bestelstatus</li>
+					<li>Verzending en levering</li>
+					<li>Retourzendingen</li>
+					<li>Betaalmethodes</li>
+					<li>Contact</li>
+					<li>Reviews</li>
+					<li>Hulp bij Nike promotiecodes</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 tabindex="0">Bedrijf</h3>
+				<ul>
+					<li>Over Nike</li>
+					<li>Nieuws</li>
+					<li>Werken bij Nike</li>
+					<li>Investeerders</li>
+					<li>Duurzaamheid</li>
+					<li>Toengankelijkheid</li>
+					<li>Missie</li>
+					<li>Nike Coaching</li>
+					<li>Een Kwestie Melden</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 tabindex="0">Communitykortingen</h3>
+				<ul>
+					<li>Student</li>
+					<li>Docent</li>
+					<li>Eerstehulpverleners</li>
+					<li>Zorgprofessionals</li>
+				</ul>
+			</section>		
+		</section>
+
+			<p>Nike Inc. Alle rechten voorbehouden</p>
+			<ul>
+				<li> Handleidingen</li>
+				<li>Gebruiksvoorwaarden</li>
+				<li>Verkoopvoorwaarden</li>
+				<li>Bedrijfsgegevens</li>
+				<li>Privacy- en cookiebeleid</li>
+				<li>Privacy- en cookie-instellingen</li>
+			</ul>
+
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

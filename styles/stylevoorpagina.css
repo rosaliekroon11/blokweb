@@ -6,7 +6,7 @@
 /* Hero sectie (video autoplay) */
 /* les 24 november justify en align */
 
-main:nth-of-type(1) section:nth-of-type(1) {
+main > section:nth-of-type(1) {
     position: relative;
     display: flex;
 
@@ -19,44 +19,27 @@ main:nth-of-type(1) section:nth-of-type(1) {
     overflow: hidden;  
 }
 
-section:nth-of-type(1) video {
+main > section:nth-of-type(1) video {
     display: block;
     width: 100%;
     height: auto;  
 }
 
-section:nth-of-type(1) h2 {
+main > section:nth-of-type(1) h2 {
     position: absolute;
-
-    font-size: 2rem;
-
     color: #fff;
-
-    bottom: 20%;
-    font-weight: 600;
-    bottom: 40%;
-
+    bottom: 10rem;
     z-index: 2;
 }
 
-section:nth-of-type(1) a {
+main > section:nth-of-type(1) a {
     position: absolute;
-
-    background-color: #fff;
-    color: #000;
 
     text-decoration: none;
 
-    border-radius: 50px;
-    padding: 10px 20px;
-
-    font-weight: 500;
-    bottom: 12%;
+    bottom: 4rem;
 }
 
-section:nth-of-type(1) a:hover {
-    background-color: #cac9c9;
-}
 
 
 /* categorie sectie */
@@ -64,89 +47,78 @@ section:nth-of-type(1) a:hover {
 waarom? omdat als het scherm verkleind (op mobiel) worden de images onder elkaar gezet
 en is het oogt het beter */
 
-main:nth-of-type(1) section:nth-of-type(2) {
+main > section:nth-of-type(2) {
     max-width: 1200px;
 
     margin: 4rem auto;
-    padding: 0 2rem;
 
     text-align: center;   
 }
 
-section:nth-of-type(2) h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+main > section:nth-of-type(2) h2 {
+    padding: 2rem;
 }
 
 /* GRID */
-section:nth-of-type(2) ul {
+main > section:nth-of-type(2) ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     gap: 1rem;
 
     list-style: none;
-    font-size: 2rem;
 
     margin-bottom: 2rem;
 }
 
 
-section:nth-of-type(2) li article {
+main > section:nth-of-type(2) li {
     position: relative;
 
     padding: 0;
-    border-radius: 1px;
+    border-radius: 2px;
 
     overflow: hidden;  
 }
 
-section:nth-of-type(2) li article img {
+main > section:nth-of-type(2) li  img {
     width: 100%;
     display: block;
 }
 
-section:nth-of-type(2) li article a {
+main > section:nth-of-type(2) li  a {
     position: absolute;
 
-    bottom: 45px;
+    bottom: 2.8rem;
     left: 1rem;
 
-    background: #fff;
-
-    padding: 10px 20px;
-    border-radius: 30px;
-
-    color: #000;
     text-decoration: none;
 
-    font-weight: 600;
-    font-size: 1rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-section:nth-of-type(2) li article a:hover {
-    background-color: #cac9c9;
+main > section:nth-of-type(2) li a:hover { 
+    background-color: var(--color-hover);
 }
 
+
 /* highlight sectie*/
-main:nth-of-type(1) section:nth-of-type(3) {
+main > section:nth-of-type(3) {
     position: relative;
 
     margin-top: 5rem;
-    padding: 0;
-    border-radius: 3px;
+  
+    border-radius: 2px;
 
     overflow: hidden;
 }
 
-section:nth-of-type(3) h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;   
+main > section:nth-of-type(3) h2 {
+    text-align: center;
+    padding: 2rem;   
 }
 
-section:nth-of-type(3) ul {
+main > section:nth-of-type(3) ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -157,21 +129,21 @@ section:nth-of-type(3) ul {
 }
 
 
-section:nth-of-type(3) li {
+main > section:nth-of-type(3) li {
     position: relative;
-    border-radius: 1px;
+    border-radius: 2px;
     overflow: hidden;
 }
 
-section:nth-of-type(3) li img {
+main > section:nth-of-type(3) li img {
     width: 100%;
     display: block;
 }
 
-section:nth-of-type(3) li h3 {
+main > section:nth-of-type(3) li h3 {
     position: absolute;
 
-    bottom: 100px;
+    bottom: 6.25rem;
     left: 30px;
 
     z-index: 3;
@@ -181,46 +153,38 @@ section:nth-of-type(3) li h3 {
     color: #f9f9f9;
 }
 
-section:nth-of-type(3) li a {
+main > section:nth-of-type(3) li a {
     position: absolute;
 
     left: 30px;
-    bottom: 45px;
-
-    background: white;
-
-    padding: 10px 20px;
-    border-radius: 30px;
+    bottom: 2.8rem;
 
     text-decoration: none;
-    color: black;
-    font-weight: 600;
 }
 
-section:nth-of-type(3) li a:hover {
-    background-color: #cac9c9;
+main > section:nth-of-type(3) li a:hover { 
+    background-color: var(--color-hover);
 }
 
 
 /* carrousel sectie*/
 /*carrousel bron: https://codepen.io/shooft/pen/vENdvzK (flexbox oefening 4)*/
 
-main:nth-of-type(1) section:nth-of-type(4) {
-    margin-top: 5rem;
+main > section:nth-of-type(4) {
     position: relative;
-    padding: 0 2rem;
-    border-radius: 3px;
+    margin: 5rem;
+
+    border-radius: 12px;
 }
 
-section:nth-of-type(4) h2 {
+main > section:nth-of-type(4) h2 {
     margin-bottom: 2rem;
+    
     text-align: left;
-
-    font-weight: 475;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /*ander formaat dan de h2s*/
 }
 
-section:nth-of-type(4) ul{
+main > section:nth-of-type(4) ul{
   display:flex;
   overflow:auto;
 
@@ -230,49 +194,53 @@ section:nth-of-type(4) ul{
 
   gap: 1rem;
   
-  
   scrollbar-width:thin;
   scrollbar-color:rgb(199, 199, 199) transparent;
 }
 
-section:nth-of-type(4) ul li {
-  flex-basis:0 0 200px;
+main > section:nth-of-type(4) ul li {
+  flex-basis: 200px;
   flex-shrink:0;
 
   scroll-snap-align:center;
   list-style: none;
 }
 
-section:nth-of-type(4) li img {
+main > section:nth-of-type(4) li img {
     width: 380px;
     height: 320px;
     display: block;  
 }
 
-section:nth-of-type(4) li a {
+main > section:nth-of-type(4) li a {
     position: relative;
     left: 30px;
-    bottom: 60px;
+    bottom: 3.75rem;
 
     background: white;
     color: black;
 
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: .6rem 1.2rem;
+    border-radius: 28px;
     text-decoration: none;
-    font-weight: 600;
 }
+
+main > section:nth-of-type(4) li a:hover { 
+    background-color: var(--color-hover);
+}
+
 
 /*knoppen voor carousel*/
 
-section:nth-of-type(4) button {
+main > section:nth-of-type(4) button {
     position: absolute;
     background-color: #e6e6e6;
     width: 50px;
     height: 50px;
+    
 
 
-    border-radius: 30px;
+    border-radius: 28px;
     cursor: pointer;
 
     display: flex;
@@ -280,15 +248,15 @@ section:nth-of-type(4) button {
     justify-content: center;
 }
 
-section:nth-of-type(4) button:nth-of-type(1) {
+main > section:nth-of-type(4) button:nth-of-type(1) {
   left: calc(50% - 35px);
 }
 
-section:nth-of-type(4) button:nth-of-type(2) {
+main > section:nth-of-type(4) button:nth-of-type(2) {
   left: calc(50% + 35px);
 }
 
-section:nth-of-type(4) button::before {
+main > section:nth-of-type(4) button::before {
   content:'';
 
   width: 10px;
@@ -299,66 +267,90 @@ section:nth-of-type(4) button::before {
 }
 
 
-section:nth-of-type(4) button:nth-of-type(1)::before {
+main > section:nth-of-type(4) button:nth-of-type(1)::before {
   transform: rotate(135deg); 
 }
 
-section:nth-of-type(4) button:nth-of-type(2)::before {
+main > section:nth-of-type(4) button:nth-of-type(2)::before {
   transform: rotate(-45deg);
 }
 
-section:nth-of-type(4) li a:hover {
-    background-color: #cac9c9;
-}
+
 
 /*pre-footer*/
 /* bron voor summary use: https://www.w3schools.com/tags/tag_summary.asp*/
 
-section:nth-of-type(5) {
-    margin-top:50px;
+footer > section:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
     padding: 1rem 1.2rem;
 }
 
-section:nth-of-type(5) details {
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
-
-    cursor: pointer;
+footer > section:nth-of-type(1) h2 {
+    display: none;
 }
 
-section:nth-of-type(5) summary {
-    display: flex;
+footer > section:nth-of-type(1) > section {
+  display: flex;
+  flex-direction: column;
+}
 
+
+footer > section:nth-of-type(1) ul {
+    margin-bottom: 1rem;
     list-style: none;
-    
-    justify-content: space-between;
-    align-items: center;
 
-    font-size: 18px;
-    font-weight: 500;
-    color:#171717; 
 }
 
-section:nth-of-type(5) summary::after {
-    content: "↓";
-    font-size: 1.2rem;
-}
-
-section:nth-of-type(5) ul {
+footer > section:nth-of-type(1) ul li {
+    padding: 0.3rem;
+    margin: 0.3rem;
     list-style: none;
-    padding: 1rem 0 0;
-    margin: 0;
 }
 
-section:nth-of-type(5) li {
-    padding: 0.5rem 0;
-    margin-bottom: 10px;
-
-    color: #5e5d5d;
-
-    font-size: 13px;
-    font-weight: 500;   
+footer > section:nth-of-type(1) ul li:hover {
+  text-decoration: underline;
+  
 }
+
+
+/* media-queries (pre-footer)*/
+
+@media (max-width: 800px) {
+
+    footer > section:nth-of-type(1) {
+        display: block;
+        
+    }
+
+    footer > section:nth-of-type(1) ul {
+        display: none;
+    }
+
+    footer > section:nth-of-type(1) h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem 0;
+
+    }
+
+    footer > section:nth-of-type(1) h3::after {
+        content: "↓";
+        transition: transform 0.25s ease;
+    }
+
+    footer > section:nth-of-type(1) h3:focus + ul,
+    footer > section:nth-of-type(1) h3:active + ul {
+        display: block;
+        transition: transform 0.25s ease;
+    }
+
+}
+
 
 /* bron grid-column: https://www.w3schools.com/cssref/func_repeat.php */
 

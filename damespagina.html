@@ -28,6 +28,9 @@
 				<i class="menu"></i>
 			</button>
 			<ul>
+				<li class="menu-close">
+					<button aria-label="Menu sluiten">&times;</button>
+				</li>
 				<li><a href="..">Nieuw</a></li>
 				<li><a href="..">Heren</a></li>
 				<li><a href="damespagina.html">Dames</a></li>
@@ -52,219 +55,221 @@
 	</header>
 	
 	<main>
-	
+		<aside>
 		<!--Filter categorie-->
-		<section>
+			<section>
+				<h2>Filter categorieën</h2>
+				<ul>
+					<li>Tops en T-shirts</li>
+					<li>Sport-bh's</li>
+					<li>Hoodies en sweatshirts</li>
+					<li>Shorts</li>
+					<li>Broeken en tights</li>
+					<li>Jassen en bodywarmers</li>
+					<li>Trainingspakken</li>
+					<li>Compressie en basislaag</li>
+					<li>Jumpsuits en playsuits</li>
+					<li>Rokjes en jurken</li>
+					<li>Surf- en badkleding</li>
+					<li>Hidjabs</li>
+					<li>Sokken</li>	
+				</ul>
+			</section>
 
-   		 	<ul>
-				<li><a href="damespagina.html">Tops en T-shirts</a></li>
-				<li>Sport-bh's</li>
-				<li>Hoodies en sweatshirts</li>
-				<li>Shorts</li>
-				<li>Broeken en tights</li>
-				<li>Jassen en bodywarmers</li>
-				<li>Trainingspakken</li>
-				<li>Compressie en basislaag</li>
-				<li>Jumpsuits en playsuits</li>
-				<li>Rokjes en jurken</li>
-				<li>Surf- en badkleding</li>
-				<li>Hidjabs</li>
-				<li>Sokken</li>	
-			</ul>
- 		</section>
+			<!--filter details-->
+			<section>
+				<h2>Filter details</h2>
+			<!--input types: dit zijn de mogelijke filter opties.
+			Het komt dan overeen met de data-atributen van de producten, dit werkt
+			dan weer samen met js om te bepalen wat dan zichtbaar wordt zodra
+			bepaalde filters geslecteerd zijn.-->
+				<details>
+					<summary>Geslacht</summary>
+					<label>
+						<input type="checkbox" data-filter="heren">Heren
+					</label>
+					<label>
+						<input type="checkbox" data-filter="dames">Dames
+					</label>
+					<label>
+						<input type="checkbox" data-filter="unisex">Unisex
+					</label>
+				</details>
 
-		<!--filter details-->
-		<section>
-		 <!--input types: dit zijn de mogelijke filter opties.
-		 Het komt dan overeen met de data-atributen van de producten, dit werkt
-		 dan weer samen met js om te bepalen wat dan zichtbaar wordt zodra
-		 bepaalde filters geslecteerd zijn.-->
-			<details>
-				<summary>Geslacht</summary>
-				<label>
-					<input type="checkbox" data-filter="heren">Heren
-				</label>
-				<label>
-					<input type="checkbox" data-filter="dames">Dames
-				</label>
-				<label>
-					<input type="checkbox" data-filter="unisex">Unisex
-				</label>
-			</details>
+				<details>
+					<summary>Shop op prijs</summary>
+					<label><input type="checkbox" data-filter="50">€ 0 - € 50</label>
+					<label><input type="checkbox" data-filter="100">€ 50 - € 100</label>
+					<label><input type="checkbox" data-filter="150">€ 100 - € 150</label>
+					<label><input type="checkbox" data-filter="+">€ 150+</label>
+				</details>
 
-			<details>
-				<summary>Shop op prijs</summary>
-				<label><input type="checkbox" data-filter="50">€ 0 - € 50</label>
-				<label><input type="checkbox" data-filter="100">€ 50 - € 100</label>
-				<label><input type="checkbox" data-filter="150">€ 100 - € 150</label>
-				<label><input type="checkbox" data-filter="+">€ 150+</label>
-			</details>
+				<details>
+					<summary>Sale en aanbiedingen</summary>
+					<label>
+						<input type="checkbox" data-filter="sale">Sale
+					</label>
+				</details>
 
-			<details>
-				<summary>Sale en aanbiedingen</summary>
-				<label>
-					<input type="checkbox" data-filter="sale">Sale
-				</label>
-			</details>
+				<details>
+					<summary>Maat</summary>
+					<label><input type="checkbox" data-filter="xs">XS (EU 32-34)</label>
+					<label><input type="checkbox" data-filter="s">S (EU 36-38)</label>
+					<label><input type="checkbox" data-filter="m">M (EU 40-42)</label>
+					<label><input type="checkbox" data-filter="l">L (EU 44-46)</label>
+					<label><input type="checkbox" data-filter="xl">XL (EU 48-50)</label>
+					<label><input type="checkbox" data-filter="1x">1X</label>
+					<label><input type="checkbox" data-filter="2x">2X </label>
+					<label><input type="checkbox" data-filter="3x">3X</label>
+					<label><input type="checkbox" data-filter="xxl">XXL (EU 52-54)</label>
+					<label><input type="checkbox" data-filter="small">S</label>
+					<label><input type="checkbox" data-filter="medium">M</label>
+					<label><input type="checkbox" data-filter="large">L</label>
+					<label><input type="checkbox" data-filter="extralarge">XL</label>
+					<label><input type="checkbox" data-filter="extralarge2">XXL</label>
+				</details>
 
-			<details>
-				<summary>Maat</summary>
-				<label><input type="checkbox" data-filter="xs">XS (EU 32-34)</label>
-				<label><input type="checkbox" data-filter="s">S (EU 36-38)</label>
-				<label><input type="checkbox" data-filter="m">M (EU 40-42)</label>
-				<label><input type="checkbox" data-filter="l">L (EU 44-46)</label>
-				<label><input type="checkbox" data-filter="xl">XL (EU 48-50)</label>
-				<label><input type="checkbox" data-filter="1x">1X</label>
-				<label><input type="checkbox" data-filter="2x">2X </label>
-				<label><input type="checkbox" data-filter="3x">3X</label>
-				<label><input type="checkbox" data-filter="xxl">XXL (EU 52-54)</label>
-				<label><input type="checkbox" data-filter="small">S</label>
-				<label><input type="checkbox" data-filter="medium">M</label>
-				<label><input type="checkbox" data-filter="large">L</label>
-				<label><input type="checkbox" data-filter="extralarge">XL</label>
-				<label><input type="checkbox" data-filter="extralarge2">XXL</label>
-			</details>
+				<details>
+					<summary>Kleur</summary>
+					<label><input type="checkbox" data-filter="zwart">Zwart</label>
+					<label><input type="checkbox" data-filter="blauw">Blauw</label>
+					<label><input type="checkbox" data-filter="bruin">Bruin</label>	
+					<label><input type="checkbox" data-filter="groen">Groen</label>
+					<label><input type="checkbox" data-filter="grijs">Grijs</label>
+					<label><input type="checkbox" data-filter="meerkleurig">Meerkleurig</label>
+					<label><input type="checkbox" data-filter="oranje">Oranje</label>
+					<label><input type="checkbox" data-filter="roze">Roze</label>
+					<label><input type="checkbox" data-filter="paars">Paars</label>
+					<label><input type="checkbox" data-filter="rood">Rood</label>
+					<label><input type="checkbox" data-filter="wit">Wit</label>
+					<label><input type="checkbox" data-filter="geel">Geel</label>
+				</details>
 
-			<details>
-				<summary>Kleur</summary>
-				<label><input type="checkbox" data-filter="zwart">Zwart</label>
-				<label><input type="checkbox" data-filter="blauw">Blauw</label>
-				<label><input type="checkbox" data-filter="bruin">Bruin</label>	
-				<label><input type="checkbox" data-filter="groen">Groen</label>
-				<label><input type="checkbox" data-filter="grijs">Grijs</label>
-				<label><input type="checkbox" data-filter="meerkleurig">Meerkleurig</label>
-				<label><input type="checkbox" data-filter="oranje">Oranje</label>
-				<label><input type="checkbox" data-filter="roze">Roze</label>
-				<label><input type="checkbox" data-filter="paars">Paars</label>
-				<label><input type="checkbox" data-filter="rood">Rood</label>
-				<label><input type="checkbox" data-filter="wit">Wit</label>
-				<label><input type="checkbox" data-filter="geel">Geel</label>
-			</details>
+				<details>
+					<summary>Sport</summary>
+					<label><input type="checkbox" data-filter="lifestyle">Lifestyle</label>
+					<label><input type="checkbox" data-filter="hardlopen">Hardlopen</label>
+					<label><input type="checkbox" data-filter="voetbal">Voetbal</label>
+					<label><input type="checkbox" data-filter="fitness">Fitness en training</label>
+				</details>
 
-			<details>
-				<summary>Sport</summary>
-				<label><input type="checkbox" data-filter="lifestyle">Lifestyle</label>
-				<label><input type="checkbox" data-filter="hardlopen">Hardlopen</label>
-				<label><input type="checkbox" data-filter="voetbal">Voetbal</label>
-				<label><input type="checkbox" data-filter="fitness">Fitness en training</label>
-			</details>
+				<details>
+					<summary>Merk</summary>
+					<label><input type="checkbox" data-filter="nike">Nike Sportswear</label>
+					<label><input type="checkbox" data-filter="jordan">Jordan</label>
+					<label><input type="checkbox" data-filter="nikebyyou">Nike by you</label>
+					<label><input type="checkbox" data-filter="nikelab">Nikelab</label>
+				</details>
 
-			<details>
-				<summary>Merk</summary>
-				<label><input type="checkbox" data-filter="nike">Nike Sportswear</label>
-				<label><input type="checkbox" data-filter="jordan">Jordan</label>
-				<label><input type="checkbox" data-filter="nikebyyou">Nike by you</label>
-				<label><input type="checkbox" data-filter="nikelab">Nikelab</label>
-			</details>
+				<details>
+					<summary>Pasvorm</summary>
+					<label><input type="checkbox" data-filter="oversized">Oversized</label>
+					<label><input type="checkbox" data-filter="ruimvallend">Ruimvallend</label>
+					<label><input type="checkbox" data-filter="standaard">Standaard</label>
+					<label><input type="checkbox" data-filter="getailleerd">Getailleerd</label>
+				</details>
 
-			<details>
-				<summary>Pasvorm</summary>
-				<label><input type="checkbox" data-filter="oversized">Oversized</label>
-				<label><input type="checkbox" data-filter="ruimvallend">Ruimvallend</label>
-				<label><input type="checkbox" data-filter="standaard">Standaard</label>
-				<label><input type="checkbox" data-filter="getailleerd">Getailleerd</label>
-			</details>
+				<details>
+					<summary>Collecties</summary>
+					<label><input type="checkbox" data-filter="premium">Nike Premium Essentials</label>
+					<label><input type="checkbox" data-filter="tech">Nike Tech</label>
+					<label><input type="checkbox" data-filter="flight">Flight</label>
+					<label><input type="checkbox" data-filter="club">Nike Club</label>
+				</details>
 
-			<details>
-				<summary>Collecties</summary>
-				<label><input type="checkbox" data-filter="premium">Nike Premium Essentials</label>
-				<label><input type="checkbox" data-filter="tech">Nike Tech</label>
-				<label><input type="checkbox" data-filter="flight">Flight</label>
-				<label><input type="checkbox" data-filter="club">Nike Club</label>
-			</details>
+				<details>
+					<summary>Kenmerken</summary>
+					<label><input type="checkbox" data-filter="zij">Zijsplitjes</label>
+					<label><input type="checkbox" data-filter="details">Details met reflecterend design</label>
+					<label><input type="checkbox" data-filter="vouwbaar">Opvouwbare capuchon</label>
+					<label><input type="checkbox" data-filter="verwijder">Verwijderbare capuchon</label>
+				</details>
 
-			<details>
-				<summary>Kenmerken</summary>
-				<label><input type="checkbox" data-filter="zij">Zijsplitjes</label>
-				<label><input type="checkbox" data-filter="details">Details met reflecterend design</label>
-				<label><input type="checkbox" data-filter="vouwbaar">Opvouwbare capuchon</label>
-				<label><input type="checkbox" data-filter="verwijder">Verwijderbare capuchon</label>
-			</details>
-
-			<details>
-				<summary>Technologie</summary>
-				<label><input type="checkbox" data-filter="drifit">Dri-FIT</label>
-				<label><input type="checkbox" data-filter="drifitadv">Dri-FIT ADV</label>
-				<label><input type="checkbox" data-filter="goretex">GORE-TEX</label>
-				<label><input type="checkbox" data-filter="grip">NikeGrip</label>
-			</details>
-		</section>
-
+				<details>
+					<summary>Technologie</summary>
+					<label><input type="checkbox" data-filter="drifit">Dri-FIT</label>
+					<label><input type="checkbox" data-filter="drifitadv">Dri-FIT ADV</label>
+					<label><input type="checkbox" data-filter="goretex">GORE-TEX</label>
+					<label><input type="checkbox" data-filter="grip">NikeGrip</label>
+				</details>
+			</section>
+		</aside>
 		<!--Producten-->
 		<section>
+			<h2>Producten</h2>
 			<ul>
 				<!--custom data attributen, dit zou dan producteigenschappen
 				 op kunnen slaan in de html, in js zou dit dan een handige filterlogica zijn-->
 
 				<li data-gender="dames" data-size="l">
 					<img src="images/damessportswear.jpeg" alt="Zwart lange mouwen sportwear">
-					<h2>Nike Sportswear</h2>
+					<h3>Nike Sportswear</h3>
 					<p>Top met lange mouwen dames</p>
-					<h2>€59,99</h2>
+					<h3>€59,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
 				<li data-gender="dames" data-size="l">
 					<img src="images/damesphoenix.jpeg" alt="Baby roze cropped top">
-					<h2>Nike Sportswear Phoenix Cozy Boucle</h2>
+					<h3>Nike Sportswear Phoenix Cozy Boucle</h3>
 					<p>Cropped knit damestop met korte mouwen</p>
-					<h2>€64,99</h2>
+					<h3>€64,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
-				<li data-gender="dames" data-size="l">
+				<li data-gender="dames" data-size="s">
 					<img src="images/damesoneclassic.jpeg" alt="Donkerblauwe top met korte mouwen">
-					<h2>Nike One Classic</h2>
+					<h3>Nike One Classic</h3>
 					<p>Dri-FIT dames top met korte mouwen</p>
-					<h2>€34,99</h2>
+					<h3>€34,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
 				<li data-gender="dames" data-size="l">
 					<img src="images/damesonefitted.png" alt="Witte top met lange mouwen">
-					<h2>Nike One Fitted</h2>
+					<h3>Nike One Fitted</h3>
 					<p>Dri-FIT dames top met lange mouwen</p>
-					<h2>€49,99</h2>
+					<h3>€49,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
-				<li data-gender="dames" data-size="l">
+				<li data-gender="dames" data-size="s">
 					<img src="images/damespro.jpeg" alt="Zwarte korte tanktop">
-					<h2>Nike Pro</h2>
+					<h3>Nike Pro</h3>
 					<p>Korte tanktop met Dri-FIT voor dames</p>
-					<h2>€34,99</h2>
+					<h3>€34,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
-				<li data-gender="dames" data-size="l">
+				<li data-gender="dames" data-size="m">
 					<img src="images/damesswift.png" alt="Zwarte hardlooptop">
-					<h2>Nike Swift</h2>
+					<h3>Nike Swift</h3>
 					<p>Therma-FIT hardlooptop met colkraag voor dames</p>
-					<h2>€74,99</h2>
+					<h3>€74,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
 				<li data-gender="dames" data-size="l">
 					<img src="images/damestempo.jpeg" alt="Lichtpaarse hardlooptop met korte rits">
-					<h2>Nike Tempo</h2>
+					<h3>Nike Tempo</h3>
 					<p>Dri-FIT hardlooptop met korte rits voor dames</p>
-					<h2>€44,99</h2>
+					<h3>€44,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
 				<li data-gender="dames" data-size="l">
 					<img src="images/damesvictory.jpeg" alt="Maroon tennistanktop">
-					<h2>Nike Victory</h2>
+					<h3>Nike Victory</h3>
 					<p>Dri-FIT tennistanktop voor dames</p>
-					<h2>€42,99</h2>
+					<h3>€42,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
-				<li data-gender="dames" data-size="l">
+				<li data-gender="dames" data-size="xl">
 					<img src="images/dameszenvy.jpeg" alt="Zwarte damestop met ritssluiting en lange mouwen">
-					<h2>Nike Zenvy</h2>
+					<h3>Nike Zenvy</h3>
 					<p>Dri-FIT damestop met ritssluiting en lange mouwen</p>
-					<h2>€89,99</h2>
+					<h3>€89,99</h3>
 					<button aria-pressed="false" aria-label="Favorieten">♥</button>
 				</li>
 
@@ -273,7 +278,7 @@
 
 		<!--gerelateerde categorieen-->
 		<section>
-			<h2>Gerelateerde Categorieën</h2>
+			<h2>Gerelateerde categorieën</h2>
 			<ul>
 				<li>
 					<a>Plus Size hardloopkleding</a>
@@ -368,9 +373,16 @@
 
 		</section>
 
+	</main>
+
+	<!--Footer-->
+
+	<footer>
+
 		<section>
-			<details>
-				<summary>Bronnen</summary>
+		<h2>Pre-footer</h2>
+			<section>
+				<h3 tabindex="0">Bronnen</h3>
 				<ul>
 					<li>Cadeaubonnen</li>
 					<li>Zakelijke cadeaubonnen</li>
@@ -382,10 +394,10 @@
 					<li>Productadvies</li>
 					<li>Running Shoe Finder</li>
 				</ul>
-			</details>
+			</section>
 
-			<details>
-				<summary>Help</summary>
+			<section>
+			 <h3 tabindex="0">Help</h3>
 				<ul>
 					<li>Help</li>
 					<li>Bestelstatus</li>
@@ -396,10 +408,10 @@
 					<li>Reviews</li>
 					<li>Hulp bij Nike promotiecodes</li>
 				</ul>
-			</details>
+			</section>
 
-			<details>
-				<summary>Bedrijf</summary>
+			<section>
+			 <h3 tabindex="0">Bedrijf</h3>
 				<ul>
 					<li>Over Nike</li>
 					<li>Nieuws</li>
@@ -411,26 +423,20 @@
 					<li>Nike Coaching</li>
 					<li>Een Kwestie Melden</li>
 				</ul>
-			</details>
+			</section>
 
-			<details>
-				<summary>Communitykortingen</summary>
+			<section>
+			 <h3 tabindex="0">Communitykortingen</h3>
 				<ul>
 					<li>Student</li>
 					<li>Docent</li>
 					<li>Eerstehulpverleners</li>
 					<li>Zorgprofessionals</li>
 				</ul>
-			</details>
-			
-		</section>
-	</main>
+			</section>
+	</section>
 
-
-	<!--Footer-->
-
-	<footer>
-		<p>&copy Nike, Inc. Alle rechten voorbehouden</p>
+		<p>Nike Inc. Alle rechten voorbehouden</p>
 		<ul>
 			<li> Handleidingen</li>
 			<li>Gebruiksvoorwaarden</li>
